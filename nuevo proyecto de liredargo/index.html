@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Liderazgo y Desempeño</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tema1.html">1. Habilidades</a></li>
+                <li><a href="tema2.html">2. Comunicación</a></li>
+                <li><a href="tema3.html">3. Motivación</a></li>
+                <li><a href="evidencia.html">4. Equipo</a></li>
+                <li><a href="tema5.html">5. Decisiones</a></li>
+                <li><a href="tema6.html">6. Conflictos</a></li>
+                <li><a href="tema7.html">7. Tiempo</a></li>
+                <li><a href="tema8.html">8. Cambio</a></li>
+                <li><a href="tema9.html">9. Rendimiento</a></li>
+                <li><a href="tema10.html">10. Alto Desempeño</a></li>
+                <li><a href="tema11.html">11. Cultura</a></li>
+                <li><a href="tema12.html">12. Ética</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" style="text-align: center;">
+            <h1 style="color: var(--primary); font-size: 3rem; margin-bottom: 10px;">Gestión Estratégica y Liderazgo</h1>
+            <p style="font-size: 1.2rem; color: var(--accent); font-weight: 600; margin-bottom: 30px;">Portal Educativo - UTESA</p>
+            
+            <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1000" 
+                 alt="Liderazgo y Estrategia" 
+                 class="img-pulse" 
+                 style="height: 450px;">
+
+            <div style="text-align: left; margin-top: 30px;">
+                <h3>Bienvenida</h3>
+                <p>Bienvenido a la plataforma dedicada al desarrollo de competencias directivas. Este portal ha sido diseñado para explorar los pilares fundamentales que transforman la gestión administrativa en un liderazgo de impacto. Navega a través de los temas en el menú superior para profundizar en cada área.</p>
+                
+                <p><strong>Objetivo del Proyecto:</strong> Analizar la relación entre las funciones gerenciales y el alto desempeño organizacional mediante casos prácticos y fundamentos teóricos actualizados.</p>
+            </div>
+        </section>
+    </main>
+    <script>
+        let ultimoScroll = 0;
+        const menu = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            let scrollActual = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollActual > ultimoScroll && scrollActual > 50) {
+                menu.classList.add('oculto');
+            } else {
+                menu.classList.remove('oculto');
+            }
+            ultimoScroll = scrollActual;
+        });
+    </script>
+</body>
+</html>

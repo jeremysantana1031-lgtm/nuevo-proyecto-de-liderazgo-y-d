@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12. Liderazgo Ético</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tema1.html">1. Habilidades</a></li>
+                <li><a href="tema2.html">2. Comunicación</a></li>
+                <li><a href="tema3.html">3. Motivación</a></li>
+                <li><a href="evidencia.html">4. Equipo</a></li>
+                <li><a href="tema5.html">5. Decisiones</a></li>
+                <li><a href="tema6.html">6. Conflictos</a></li>
+                <li><a href="tema7.html">7. Tiempo</a></li>
+                <li><a href="tema8.html">8. Cambio</a></li>
+                <li><a href="tema9.html">9. Rendimiento</a></li>
+                <li><a href="tema10.html">10. Alto Desempeño</a></li>
+                <li><a href="tema11.html">11. Cultura</a></li>
+                <li><a href="tema12.html">12. Ética</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tema12">
+            <h2>12. Liderazgo Ético</h2>
+            
+            <img src="https://images.pexels.com/photos/3183165/pexels-photo-3183165.jpeg?auto=compress&cs=tinysrgb&w=1000" 
+                 alt="Apretón de manos representando confianza" 
+                 class="img-pulse">
+
+            <h3>Definición</h3>
+            <p>Es el liderazgo dirigido por el respeto a las creencias y valores éticos, así como por la dignidad y los derechos de los demás. Implica tomar decisiones transparentes, justas y que no sacrifiquen la integridad de la organización por ganancias a corto plazo.</p>
+
+            <h3>Importancia en el contexto organizacional</h3>
+            <p>El liderazgo ético protege la reputación de la empresa (su activo más valioso), fomenta un trato justo interno que previene demandas laborales, y genera una lealtad inquebrantable por parte de los clientes y proveedores que confían en la marca.</p>
+
+            <h3>Caso Real: El Dilema de los Proveedores</h3>
+            <p>El gerente de compras de una red de servicios técnicos recibe la oferta de un nuevo proveedor: si adquiere repuestos de generadores de menor calidad a un precio inflado, recibirá una jugosa comisión "por debajo de la mesa". El líder ético rechaza la oferta de inmediato, reporta el incidente y elige al proveedor que garantiza la calidad pactada con el cliente final. Aunque se pierda un beneficio personal rápido, asegura la sostenibilidad, el prestigio y la legalidad del negocio.</p>
+
+            <h3>Recomendaciones y Herramientas</h3>
+            <ul>
+                <li><strong>Código de Ética y Conducta:</strong> Un documento claro, accesible para todos, que estipule qué comportamientos son aceptables y cuáles ameritan despido.</li>
+                <li><strong>Canales de Denuncia (Whistleblowing):</strong> Mecanismos anónimos y seguros para que los empleados puedan reportar prácticas corruptas o abusos sin miedo a represalias.</li>
+                <li><strong>Matriz de Decisión Ética:</strong> Antes de actuar, el líder debe preguntarse: ¿Es legal? ¿Es justo para todas las partes? ¿Me sentiría orgulloso si mi decisión saliera mañana en las noticias?</li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        let ultimoScroll = 0;
+        const menu = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            let scrollActual = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollActual > ultimoScroll && scrollActual > 50) {
+                menu.classList.add('oculto');
+            } else {
+                menu.classList.remove('oculto');
+            }
+            ultimoScroll = scrollActual;
+        });
+    </script>
+</body>
+</html>

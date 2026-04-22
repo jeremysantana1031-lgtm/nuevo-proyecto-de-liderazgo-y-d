@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1. Habilidades Directivas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tema1.html">1. Habilidades</a></li>
+                <li><a href="tema2.html">2. Comunicación</a></li>
+                <li><a href="tema3.html">3. Motivación</a></li>
+                <li><a href="evidencia.html">4. Equipo</a></li>
+                <li><a href="tema5.html">5. Decisiones</a></li>
+                <li><a href="tema6.html">6. Conflictos</a></li>
+                <li><a href="tema7.html">7. Tiempo</a></li>
+                <li><a href="tema8.html">8. Cambio</a></li>
+                <li><a href="tema9.html">9. Rendimiento</a></li>
+                <li><a href="tema10.html">10. Alto Desempeño</a></li>
+                <li><a href="tema11.html">11. Cultura</a></li>
+                <li><a href="tema12.html">12. Ética</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tema1">
+            <h2>1. Habilidades Directivas</h2>
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1000&auto=format&fit=crop" alt="Reunión de liderazgo" class="img-pulse">
+            <h3>Definición y Marco Conceptual</h3>
+            <p>Las habilidades directivas son el conjunto de capacidades que permiten a un individuo gestionar recursos, liderar personas y tomar decisiones estratégicas. Según Robert Katz, estas se dividen en tres categorías esenciales: técnicas, humanas y conceptuales.</p>
+
+            <h3>Importancia Organizacional</h3>
+            <p>En el contexto actual, la carencia de estas habilidades no solo afecta la productividad, sino que incrementa la rotación de personal y los costos operativos. Un directivo competente actúa como un catalizador del talento humano.</p>
+
+            <h3>Caso Real: La Crisis de la Cadena de Suministro</h3>
+            <p>Consideremos una empresa de servicios de energía que enfrenta retrasos críticos en la llegada de repuestos para generadores industriales. Un líder con habilidades directivas no entra en pánico; utiliza su capacidad conceptual para reorganizar el cronograma de mantenimiento preventivo y su habilidad humana para negociar tiempos de espera con los clientes sin perder la confianza, manteniendo al equipo motivado a pesar de la presión.</p>
+
+            <h3>Herramientas Aplicables</h3>
+            <ul>
+                <li><strong>Método SMART:</strong> Para la definición de objetivos medibles.</li>
+                <li><strong>Matriz de Urgencia vs Importancia:</strong> Priorización de tareas gerenciales.</li>
+                <li><strong>Análisis FODA:</strong> Evaluación constante del entorno directivo.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        let ultimoScroll = 0;
+        const menu = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            let scrollActual = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollActual > ultimoScroll && scrollActual > 50) {
+                menu.classList.add('oculto');
+            } else {
+                menu.classList.remove('oculto');
+            }
+            ultimoScroll = scrollActual;
+        });
+    </script>
+</body>
+</html>

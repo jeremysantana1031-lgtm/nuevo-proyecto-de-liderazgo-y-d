@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7. Gestión del Tiempo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tema1.html">1. Habilidades</a></li>
+                <li><a href="tema2.html">2. Comunicación</a></li>
+                <li><a href="tema3.html">3. Motivación</a></li>
+                <li><a href="evidencia.html">4. Equipo</a></li>
+                <li><a href="tema5.html">5. Decisiones</a></li>
+                <li><a href="tema6.html">6. Conflictos</a></li>
+                <li><a href="tema7.html">7. Tiempo</a></li>
+                <li><a href="tema8.html">8. Cambio</a></li>
+                <li><a href="tema9.html">9. Rendimiento</a></li>
+                <li><a href="tema10.html">10. Alto Desempeño</a></li>
+                <li><a href="tema11.html">11. Cultura</a></li>
+                <li><a href="tema12.html">12. Ética</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tema7">
+            <h2>7. Gestión del Tiempo</h2>
+            
+            <img src="https://images.pexels.com/photos/1181311/pexels-photo-1181311.jpeg?auto=compress&cs=tinysrgb&w=1000" 
+                 alt="Reloj y planificación de calendario" 
+                 class="img-pulse">
+
+            <h3>Definición</h3>
+            <p>Es el proceso de planificar y ejercer un control consciente sobre la cantidad de tiempo dedicado a actividades específicas, con el objetivo de aumentar la eficacia, la eficiencia y la productividad general de un gerente y su equipo.</p>
+
+            <h3>Importancia en el contexto organizacional</h3>
+            <p>El tiempo es el único recurso no renovable de una empresa. Una mala gestión genera cuellos de botella, fatiga extrema (burnout) y el incumplimiento de las metas estratégicas por estar "apagando incendios" operativos todo el día.</p>
+
+            <h3>Caso Real: La Trampa de las Urgencias</h3>
+            <p>Un ingeniero jefe llega a su planta industrial con el plan de revisar los planos de expansión (tarea Importante). Sin embargo, pasa la mañana entera respondiendo correos menores, atendiendo a proveedores sin cita y arreglando una bomba de agua secundaria que un técnico junior podría haber reparado (tareas Urgentes pero no importantes). Al implementar una estricta gestión del tiempo, el ingeniero bloquea sus primeras dos horas del día exclusivamente para trabajo estratégico, delegando las operaciones menores a su equipo.</p>
+
+            <h3>Recomendaciones y Herramientas</h3>
+            <ul>
+                <li><strong>Principio de Pareto (80/20):</strong> Identificar el 20% de las tareas que generan el 80% de los resultados y enfocarse en ellas.</li>
+                <li><strong>Time Blocking (Bloques de Tiempo):</strong> Asignar franjas de tiempo cerradas en el calendario para tareas específicas, evitando la multitarea.</li>
+                <li><strong>Técnica Pomodoro:</strong> Trabajar en intervalos de máxima concentración (ej. 25 minutos) seguidos de pausas cortas, ideal para redacción de informes o programación.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        let ultimoScroll = 0;
+        const menu = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            let scrollActual = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollActual > ultimoScroll && scrollActual > 50) {
+                menu.classList.add('oculto');
+            } else {
+                menu.classList.remove('oculto');
+            }
+            ultimoScroll = scrollActual;
+        });
+    </script>
+</body>
+</html>

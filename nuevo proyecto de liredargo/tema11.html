@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11. Cultura Organizacional</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tema1.html">1. Habilidades</a></li>
+                <li><a href="tema2.html">2. Comunicación</a></li>
+                <li><a href="tema3.html">3. Motivación</a></li>
+                <li><a href="evidencia.html">4. Equipo</a></li>
+                <li><a href="tema5.html">5. Decisiones</a></li>
+                <li><a href="tema6.html">6. Conflictos</a></li>
+                <li><a href="tema7.html">7. Tiempo</a></li>
+                <li><a href="tema8.html">8. Cambio</a></li>
+                <li><a href="tema9.html">9. Rendimiento</a></li>
+                <li><a href="tema10.html">10. Alto Desempeño</a></li>
+                <li><a href="tema11.html">11. Cultura</a></li>
+                <li><a href="tema12.html">12. Ética</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tema11">
+            <h2>11. Cultura Organizacional</h2>
+            
+            <img src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1000" 
+                 alt="Ambiente laboral positivo y colaborativo" 
+                 class="img-pulse">
+
+            <h3>Definición</h3>
+            <p>Es el conjunto de valores, creencias, comportamientos y normas compartidas que determinan cómo interactúan los empleados entre sí y con el exterior. Es, en esencia, la "personalidad" de la empresa y cómo se hacen las cosas cuando nadie está mirando.</p>
+
+            <h3>Importancia en el contexto organizacional</h3>
+            <p>Una cultura fuerte atrae y retiene al mejor talento. Como dice la famosa frase del consultor Peter Drucker: <i>"La cultura se come a la estrategia en el desayuno"</i>. Ningún plan brillante funcionará si la cultura interna de la empresa es tóxica o fomenta la desconfianza.</p>
+
+            <h3>Caso Real: La Cultura de la Seguridad Integral</h3>
+            <p>En operaciones industriales pesadas, la cultura lo es todo. Si la "cultura no oficial" dicta que "la velocidad es lo más importante", un empleado ignorará un charco de aceite en el taller para cumplir la meta de entrega. Si la cultura real es de "Seguridad Primero", ese mismo empleado detendrá la operación sin miedo a ser reprendido por retrasar la producción, previniendo accidentes fatales. La cultura protege tanto al empleado como a la empresa.</p>
+
+            <h3>Recomendaciones y Herramientas</h3>
+            <ul>
+                <li><strong>Modelo de Denison:</strong> Herramienta para medir la cultura empresarial en base a Misión, Adaptabilidad, Participación y Consistencia.</li>
+                <li><strong>Onboarding Cultural:</strong> Inculcar los valores de la empresa desde el primer día de contratación (inducción), no solo enseñar funciones técnicas.</li>
+                <li><strong>Liderazgo por el ejemplo:</strong> La cultura la dictan las acciones y decisiones diarias de los líderes, no los pósters bonitos pegados en la pared de la oficina.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        let ultimoScroll = 0;
+        const menu = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            let scrollActual = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollActual > ultimoScroll && scrollActual > 50) {
+                menu.classList.add('oculto');
+            } else {
+                menu.classList.remove('oculto');
+            }
+            ultimoScroll = scrollActual;
+        });
+    </script>
+</body>
+</html>

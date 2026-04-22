@@ -1,0 +1,175 @@
+/* style.css - Diseño Final Profesional */
+:root {
+    --primary: #0f172a;
+    --accent: #3b82f6;
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #1e293b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+/* Navegación Fija - Diseño de Botones (Píldoras) */
+header {
+    background: var(--primary);
+    color: white;
+    padding: 1rem 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    text-align: center;
+    transition: transform 0.4s ease; /* Animación del menú inteligente */
+}
+
+/* Clase para ocultar el menú deslizándolo hacia arriba */
+header.oculto {
+    transform: translateY(-100%);
+}
+
+/* Si borraste el h1 en tu HTML, esta regla no afectará en nada, pero es bueno dejarla por si acaso */
+nav h1 {
+    margin-bottom: 12px;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 8px 12px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav a {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #e2e8f0;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.85rem;
+    padding: 6px 14px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--accent);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(59, 130, 246, 0.4);
+}
+
+/* Contenedor Principal */
+main {
+    max-width: 900px;
+    margin: 180px auto 50px; /* Ajustado para el menú de botones */
+    padding: 0 20px;
+}
+
+/* Secciones de Contenido */
+section {
+    background: var(--card);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: var(--primary);
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    border-left: 5px solid var(--accent);
+    padding-left: 15px;
+}
+
+h3 {
+    color: var(--accent);
+    margin: 30px 0 15px;
+    font-size: 1.4rem;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+    color: #475569;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: #475569;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Imágenes con animación */
+img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.img-pulse {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-pulse:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Diseño Responsivo (Para que se vea bien en celulares) */
+@media (max-width: 768px) {
+    header {
+        padding: 0.8rem 10px;
+    }
+    
+    nav h1 {
+        font-size: 1.2rem;
+    }
+
+    nav a {
+        font-size: 0.75rem;
+        padding: 5px 10px;
+    }
+
+    main {
+        margin-top: 150px;
+        padding: 0 15px;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    img {
+        height: 250px;
+    }
+}
